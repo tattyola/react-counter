@@ -24,7 +24,8 @@ function Counters() {
     }
 
     const addCounter = () => {
-        const newCounters = [...counters, 10];
+        // const newCounters = [...counters, 10];
+        const newCounters = [...counters, counters[counters.length-1]+1];
         setCounters(newCounters)
     }
 
